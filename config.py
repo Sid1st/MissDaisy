@@ -12,13 +12,6 @@ from logging.handlers import RotatingFileHandler
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-    HAS_SSL=bool(getenv('HAS_SSL',False))
-    if HAS_SSL:
-        URL = "https://super-juliann-sid1st-a81e062b.koyeb.app/"
-    else:
-        URL = "https://super-juliann-sid1st-a81e062b.koyeb.app/"
-
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28908582"))
 
