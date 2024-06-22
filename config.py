@@ -6,6 +6,12 @@
 import os
 import logging
 from logging.handlers import RotatingFileHandler
+import re
+from os import environ
+import random
+from pyrogram import Client
+from pyrogram.types import InputMediaPhoto
+
 
 
 
@@ -19,7 +25,7 @@ APP_ID = int(os.environ.get("APP_ID", "28908582"))
 API_HASH = os.environ.get("API_HASH", "0d79d297bb8f56caed2c8f08bfc17289")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001580649184"))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002182741200 -1002219778296').split()]
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5052476013"))
