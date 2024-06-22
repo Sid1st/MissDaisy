@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "28908582"))
 API_HASH = os.environ.get("API_HASH", "0d79d297bb8f56caed2c8f08bfc17289")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001760664883"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001580649184"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5052476013"))
@@ -28,11 +28,11 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "5052476013"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://statusringtones:fV2rGirOqMMhE1Sg@cluster0.ydwdpry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://MissXone:09ahczILiv7DrtZW@cluster0.nmseyk3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "MissDaisy")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002171837853"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+USER_REPLY_TEXT = "❌Don't send me messages, I'm only File Share bot not your girl!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(5052476013)
